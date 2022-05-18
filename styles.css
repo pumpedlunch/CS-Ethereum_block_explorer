@@ -1,0 +1,58 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+table,
+th,
+td {
+    text-align: left;
+    border: 1px solid;
+    border-collapse: collapse;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    border-color: grey;
+}
+
+div {
+    white-space: nowrap;
+}
+
+button {
+    width: 100px;
+    background-color: rgb(101, 129, 253);
+    border-radius: 6px
+}
+
+label {
+    color: rgb(101, 129, 253);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#previous,
+#block-number-form,
+#next,
+#latest {
+    display: inline-block;
+}
+
+#block-number-form {
+    padding-right: 5px;
+}
+
+#block-number-form>input {
+    width: 120px
+}
+
+#lookup-div {
+    padding-top: 10px;
+}

@@ -1,0 +1,52 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>pumpedlunch's Ethereum Block Explorer</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script type="module" src="index.js"></script>
+</head>
+
+<body>
+  <h1>pumpedlunch's Ethereum Block Explorer</h1>
+  <div id="navigation">
+    <button id="previous">< Previous</button>
+        <form id="block-number-form" onsubmit="return false;">
+          <input type="text" id="block-number-text" placeholder="Enter Block #" />
+        </form><button id="next">Next ></button>
+        <button id="latest">Latest >></button>
+  </div>
+  <table id="block-table">
+  </table>
+  <div id="lookup-div">
+    <form id="lookup-form" onsubmit="return false;">
+      <label>Look up</label>
+      <select id="block-property">
+        <option value="" disabled selected>block property</option>
+        <option value="Timestamp">Timestamp</option>
+        <option value="Transactions">Transactions</option>
+        <option value="Mined By">Mined By</option>
+        <option value="Difficulty">Difficulty</option>
+        <option value="Gas Used">Gas Used</option>
+        <option value="Gas Limit">Gas Limit</option>
+        <option value="Base Fee Per Gas">Base Fee Per Gas</option>
+        <option value="Burnt Fees">Burnt Fees</option>
+        <option value="Extra Data">Extra Data</option>
+      </select>
+      <label>over the previous</label>
+      <select id="number-of-blocks">
+        <option value="" disabled selected>#</option>
+        <option value="1">1</option>
+        <option value="5">5</option>
+        <option value="10">10</option>
+        <option value="15">15</option>
+        <option value="20">20</option>
+      </select>
+      <label>blocks</label>
+    </form>
+    <table id="lookup-table">
+    </table>
+  </div>
+</body>
+
+</html>
